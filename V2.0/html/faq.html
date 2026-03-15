@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+ <!-- هذه الصفحة تعرض محتوى الصفحة الحالية -->
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>الأسئلة الشائعة - Loving Homes</title>
+ <link rel="stylesheet" href="../css/style.css">
+ <style>
+  .accordion {
+   border: 2px solid #f0f0f0;
+   border-radius: 1rem;
+   margin-bottom: 1rem;
+   overflow: hidden;
+  }
+
+  .accordion-button {
+   width: 100%;
+   padding: 1.5rem;
+   background: white;
+   border: none;
+   cursor: pointer;
+   text-align: right;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: all 0.3s ease;
+   font-size: 1rem;
+   font-weight: 600;
+  }
+
+  .accordion-button:hover {
+   background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
+  }
+
+  .accordion.active .accordion-button {
+   background: linear-gradient(135deg, #2563EB 0%, #38BDF8 100%);
+   color: white;
+  }
+
+  .accordion-content {
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.3s ease;
+  }
+
+  .accordion.active .accordion-content {
+   max-height: 500px;
+  }
+
+  .accordion-text {
+   padding: 0 1.5rem 1.5rem;
+   background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
+   color: #555;
+   line-height: 1.8;
+  }
+
+  .chevron {
+   transition: transform 0.3s ease;
+   font-size: 1.5rem;
+  }
+
+  .accordion.active .chevron {
+   transform: rotate(180deg);
+  }
+ </style>
+</head>
+<body>
+ <!-- بداية المحتوى الرئيسي للصفحة -->
+ <!-- هيدر الموقع -->
+ <header>
+  <nav class="navbar">
+   <a href="../index.html" class="logo">
+    <img src="../images/logo.png" alt="Loving Homes Logo" class="site-logo">
+    <span>Loving Homes</span></a>
+   <ul class="nav-links">
+    <li><a href="../index.html">الرئيسية</a></li>
+    <li><a href="about.html">من نحن</a></li>
+    <li><a href="services.html">الخدمات</a></li>
+    <li><a href="packages.html">الباقات</a></li>
+    <li><a href="facilities.html">المرافق</a></li>
+    <li><a href="gallery.html">المعرض</a></li>
+    <li><a href="testimonials.html">الشهادات</a></li>
+    <li><a href="faq.html" class="active">الأسئلة</a></li>
+    <li><a href="blog.html">المدونة</a></li>
+    <li><a href="contact.html" class="cta-btn">احجز الآن</a></li>
+   </ul>
+   <button class="lang-toggle" type="button" data-lang-target="en" aria-label="Switch to English">EN</button>
+   <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+ </header>
+
+ <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url('../images/banner-faq.jpg'); background-size: cover; background-position: center; display: flex; align-items: center;">
+  <div class="hero-content" style="color: white;">
+   <h1>الأسئلة الشائعة</h1>
+   <p>إجابات على الأسئلة الأكثر شيوعا من عملائنا</p>
+  </div>
+ </section>
+
+ <section class="section">
+  <div class="container" style="max-width: 800px;">
+   <div class="accordion active">
+    <button class="accordion-button">
+     <span class="chevron">▼</span>
+     <span>كيف يمكنني حجز مكان لكلبي؟</span>
+    </button>
+    <div class="accordion-content">
+     <div class="accordion-text">يمكنك الاتصال بنا مباشرة أو ملء نموذج الحجز على موقعنا. سنساعدك في اختيار الباقة المناسبة.</div>
+    </div>
+   </div>
+
+   <div class="accordion">
+    <button class="accordion-button">
+     <span class="chevron">▼</span>
+     <span>هل توفرون خدمة التوصيل؟</span>
+    </button>
+    <div class="accordion-content">
+     <div class="accordion-text">نعم، نوفر خدمة التوصيل من وإلى منزلك مجانا للباقات المميزة والكلاسيكية.</div>
+    </div>
+   </div>
+
+   <div class="accordion">
+    <button class="accordion-button">
+     <span class="chevron">▼</span>
+     <span>ما هي ساعات العمل؟</span>
+    </button>
+    <div class="accordion-content">
+     <div class="accordion-text">نحن متاحون 24/7 لرعاية كلبك. يمكنك التواصل معنا في أي وقت.</div>
+    </div>
+   </div>
+
+   <div class="accordion">
+    <button class="accordion-button">
+     <span class="chevron">▼</span>
+     <span>هل يمكنني التواصل مع كلبي أثناء إقامته؟</span>
+    </button>
+    <div class="accordion-content">
+     <div class="accordion-text">نعم، نوفر تطبيق خاص للتواصل المباشر مع فريقنا ومشاهدة صور وفيديوهات لكلبك.</div>
+    </div>
+   </div>
+
+   <div class="accordion">
+    <button class="accordion-button">
+     <span class="chevron">▼</span>
+     <span>ما هي متطلبات التطعيم؟</span>
+    </button>
+    <div class="accordion-content">
+     <div class="accordion-text">نطلب أن يكون كلبك محدث التطعيمات. يجب تقديم شهادة التطعيم عند الحجز.</div>
+    </div>
+   </div>
+
+   <div class="accordion">
+    <button class="accordion-button">
+     <span class="chevron">▼</span>
+     <span>هل تقبلون كلاب بسلوك عدواني؟</span>
+    </button>
+    <div class="accordion-content">
+     <div class="accordion-text">نحن نستقبل الكلاب فقط. في حالة السلوك العدواني، سنتواصل معك لمناقشة الترتيبات الخاصة.</div>
+    </div>
+   </div>
+
+   <div class="accordion">
+    <button class="accordion-button">
+     <span class="chevron">▼</span>
+     <span>ما هي سياسة الإلغاء؟</span>
+    </button>
+    <div class="accordion-content">
+     <div class="accordion-text">يمكنك إلغاء الحجز قبل 24 ساعة من الموعد المحدد بدون رسوم إلغاء.</div>
+    </div>
+   </div>
+
+   <div class="accordion">
+    <button class="accordion-button">
+     <span class="chevron">▼</span>
+     <span>هل توفرون وجبات خاصة؟</span>
+    </button>
+    <div class="accordion-content">
+     <div class="accordion-text">نعم، نوفر وجبات خاصة حسب احتياجات كلبك الصحية والغذائية.</div>
+    </div>
+   </div>
+
+   <div class="accordion">
+    <button class="accordion-button">
+     <span class="chevron">▼</span>
+     <span>كم عدد الموظفين الذين يعتنون بالكلاب؟</span>
+    </button>
+    <div class="accordion-content">
+     <div class="accordion-text">لدينا فريق متخصص من 8 موظفين مدربين يعملون على مدار الساعة.</div>
+    </div>
+   </div>
+
+   <div class="accordion">
+    <button class="accordion-button">
+     <span class="chevron">▼</span>
+     <span>هل هناك تأمين على كلبي؟</span>
+    </button>
+    <div class="accordion-content">
+     <div class="accordion-text">نعم، جميع كلابنا مؤمنة ضد الحوادث والإصابات.</div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section class="section bg-light">
+  <div class="container" style="text-align: center; max-width: 600px; margin: 0 auto;">
+   <h2>لم تجد إجابتك؟</h2>
+   <p>تواصل معنا مباشرة وسنكون سعداء بمساعدتك</p>
+   <a href="contact.html" class="btn btn-primary btn-lg" style="margin-top: 1rem;">تواصل معنا</a>
+  </div>
+ </section>
+
+ <footer>
+  <div class="container">
+   <div class="footer-content">
+    <div class="footer-section">
+     <h3>Loving Homes</h3>
+     <p>فندق كلاب فاخر يوفر أفضل الخدمات والرعاية</p>
+    </div>
+    <div class="footer-section">
+     <h3>الروابط السريعة</h3>
+     <ul>
+      <li><a href="../index.html">الرئيسية</a></li>
+      <li><a href="about.html">من نحن</a></li>
+      <li><a href="services.html">الخدمات</a></li>
+      <li><a href="contact.html">التواصل</a></li>
+     </ul>
+    </div>
+    <div class="footer-section">
+     <h3>معلومات التواصل</h3>
+     <ul>
+      <li> هونج كونج، الصين</li>
+      <li> +852 1234 5678</li>
+      <li> info@lovinghomes.hk</li>
+      <li>متاح 24/7</li>
+     </ul>
+    </div>
+    <div class="footer-section">
+     <h3>تابعنا</h3>
+     <ul>
+      <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+     </ul>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p>&copy; 2026 Loving Homes. جميع الحقوق محفوظة.</p>
+   </div>
+  </div>
+ </footer>
+
+ <script src="../js/main.js"></script>
+ <script>
+  const accordionButtons = document.querySelectorAll('.accordion-button');
+  accordionButtons.forEach(button => {
+   button.addEventListener('click', () => {
+    const accordion = button.parentElement;
+    const isActive = accordion.classList.contains('active');
+    
+    document.querySelectorAll('.accordion').forEach(acc => {
+     if (acc !== accordion) {
+      acc.classList.remove('active');
+     }
+    });
+    
+    accordion.classList.toggle('active');
+   });
+  });
+ </script>
+ <!-- نهاية المحتوى الرئيسي للصفحة -->
+</body>
+</html>
